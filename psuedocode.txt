@@ -1,0 +1,22 @@
+
+
+
+// Creates the UI interface
+    Create a UI interface using, PySide2, TKInter, SimplePyGUI, or other.
+    Need a UI that is a table with three columns.
+    Table needs to be able to have many, many, rows be added to if needed.
+    Table will take each Row and covert it to a dictionary and append it to the List of data.
+    So data will be a list of dictionaries
+    Learn how to do this.
+
+
+
+#     Create the backend program that does the math.
+#     main_list = [{'Name': v,'acres': v,'NRI': v}, {'Name': v,'acres': v,'NRI': v}, {'Name': v,'acres': v,'NRI': v,}]
+#     royalty_acres = [''
+#     Each row will be stored as a dictionary with the column headers as the keys.
+#     Take each row and append it to the main_list
+#     for i(row) in main_list
+#         roy_acre = 'NRI' key * 'acre key'
+#         royalty_acres.append(i)
+#         royalty_acres['roy_acres'] = roy_acre
