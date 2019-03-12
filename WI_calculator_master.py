@@ -12,45 +12,20 @@ def get_total_acres(list_data):
     return total_acres
 
 
-input_list = [{'name': 'CHK', 'acres': 80, 'NRI': 0.75}, {'name': 'CHK', 'acres': 80, 'NRI': 0.875}, {'name': 'CHK', 'acres': 160, 'NRI': 0.75},
-              {'name': 'Roan', 'acres': 80, 'NRI': 0.8125}, {'name': 'Roan', 'acres': 80, 'NRI': 0.625}, {'name': 'Buffalo', 'acres': 80, 'NRI': 0.75},
-              {'name': 'Buffalo', 'acres': 40, 'NRI': 0.785}, {'name': 'Buffalo', 'acres': 40, 'NRI': 0.8369}]
-
-
-
-
-for row in input_list:
-    roy_acre = row['acres'] * row['NRI']
-    row['royalty acres'] = roy_acre
-
-
-
-index_value = -1
-same_entity = []
-sorted_input = sorted(input_list, key = lambda i: i['name'],reverse=True)
+input_names = ['CHK', 'CHK', 'CHK', 'Roan', 'Roan', 'Buffalo', 'Buffalo', 'Buffalo']
+input_acreages = [80, 80, 160, 80, 80, 80, 40, 40]
+input_nris = [.75, .875, .75, .8125, .625, .75, .785, .8369]
+royalty_acres = [a * b for a, b in zip(input_acreages, input_nris)]
 
 
 
 
 
-for i in sorted_input:
-    index_value += 1
-    name_sort = sorted_input[index_value]
-
-
-    print(name_sort)
-    # try:
-    #     if name_sort == sorted_input[index_value + 1]['name']:
-    #         same_entity.append(i)
-    # except IndexError:
-    #     pass
-
-
-
-
-
-
-
+# Finds the royalty acres for each index and appends the royalty acreage to dict.
+# DON'T DELETE
+# for row in input_list:
+#     roy_acre = row['acres'] * row['NRI']
+#     row['royalty acres'] = roy_acre
 
 
 
