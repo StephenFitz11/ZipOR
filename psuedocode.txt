@@ -20,3 +20,16 @@
 #         roy_acre = 'NRI' key * 'acre key'
 #         royalty_acres.append(i)
 #         royalty_acres['roy_acres'] = roy_acre
+
+    // Create an algorithm that returns all of the names contained in the list only once.
+        Append those names to a list.
+        use that list to loop through the dataset for each company
+
+
+       create a function that makes an empty list.
+        royalty acres = 0
+        for each company in all_entities
+            for each k,v in data:
+                if key[name] == company
+                    royalty acres += key[roy_acres]
+
