@@ -11,7 +11,7 @@ def open_dataset(string_filename):
 def list_companies(dataset):
     all_companies = []
     for company in dataset['companies']:
-        all_companies.append(company['name'])
+        all_companies.append(company['Name'])
     all_companies = list(dict.fromkeys(all_companies))
     return all_companies
 
@@ -19,7 +19,7 @@ def list_companies(dataset):
 def calculate_royac(dataset):
     """Appends the royalty acres to each dictionary"""
     for company in dataset['companies']:
-        roy_acre = company['acres'] * company['nri']
+        roy_acre = company['Acres'] * company['NRI']
         company['royalty_acres'] = roy_acre
 
 
@@ -27,7 +27,7 @@ def get_royalty_acres(key, dataset):
     """Sums the royalty acres of a given [key] in JSON file"""
     total_royac = 0
     for company in dataset['companies']:
-        if company['name'] == key:
+        if company['Name'] == key:
             total_royac += company['royalty_acres']
     return total_royac
 
@@ -36,8 +36,8 @@ def get_total_acres(key, dataset):
     """Sums the royalty acres of a given [key] in JSON file"""
     total_royac = 0
     for company in dataset['companies']:
-        if company['name'] == key:
-            total_royac += company['acres']
+        if company['Name'] == key:
+            total_royac += company['Acres']
     return total_royac
 
 

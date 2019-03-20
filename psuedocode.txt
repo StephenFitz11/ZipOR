@@ -11,25 +11,15 @@
 
 
 
-#     Create the backend program that does the math.
-#     main_list = [{'Name': v,'acres': v,'NRI': v}, {'Name': v,'acres': v,'NRI': v}, {'Name': v,'acres': v,'NRI': v,}]
-#     royalty_acres = [''
-#     Each row will be stored as a dictionary with the column headers as the keys.
-#     Take each row and append it to the main_list
-#     for i(row) in main_list
-#         roy_acre = 'NRI' key * 'acre key'
-#         royalty_acres.append(i)
-#         royalty_acres['roy_acres'] = roy_acre
-
-    // Create an algorithm that returns all of the names contained in the list only once.
-        Append those names to a list.
-        use that list to loop through the dataset for each company
-
-
-       create a function that makes an empty list.
-        royalty acres = 0
-        for each company in all_entities
-            for each k,v in data:
-                if key[name] == company
-                    royalty acres += key[roy_acres]
+// Create the program.
+    ZipOR will have a window pop up and ask the user to select their desktop folder.
+    ZipOR will prompt the user and ask how many breaks they have
+    ZipOR will create an excel workbook with the sheets based on how many breaks they have
+    User will copy all breaks into the spreadsheet
+    ZipOR will prompt them to close the spreadsheet once all data has been copied and
+        parameters are met.
+    ZipOR will run the math on each spreadsheet then return a NEW excel sheet output
+    ZipOR will ask them if they would like to run another WI recap.
+    ZipOR will cache all the data the user input to a cache which the user then can re run the same WB
+        from a previous session if need be.
 
